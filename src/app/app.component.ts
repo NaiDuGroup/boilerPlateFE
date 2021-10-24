@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `
+    <router-outlet></router-outlet>
+    <p-toast position="top-right"></p-toast>
+  `,
 })
 export class AppComponent {
-  title = 'complete-frontend-project-somehelp';
 }
